@@ -1,0 +1,4 @@
+/* StockSense base styles — intentionally minimal; design lives in tailwind utilities. */
+.App {
+  min-height: 100vh;
+}

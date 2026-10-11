@@ -1,0 +1,47 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: stocksense-api
+    environment:
+      - PORT=8001
+      - CORS_ORIGINS=*
+    ports:
+      - "8001:8001"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8001/api/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.17.0
+    container_name: stocksense-mlflow
+    environment:
+      - MLFLOW_ALLOW_FILE_STORE=true
+    command: >
+      bash -c "pip install --no-cache-dir --quiet mlflow==2.17.0 &&
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri file:/mlruns
+      --default-artifact-root file:/mlruns"
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+
+  trainer:
+    build:
+      context: .
+      dockerfile: Dockerfile.train
+    container_name: stocksense-trainer
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    volumes:
+      - ./data:/work/data
+      - ./backend/artifacts:/work/backend/artifacts
+      - ./mlruns:/work/mlruns
+    depends_on:
+      - mlflow
+    profiles:
+      - train

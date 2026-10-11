@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install training deps
+        run: pip install -r backend/requirements-train.txt
+
+      - name: Lint
+        run: ruff check .
+
+      - name: Pytest
+        run: pytest tests/ -q
+
+      - name: Training smoke run
+        env:
+          MLFLOW_ALLOW_FILE_STORE: "true"
+        run: python -m ml.train --data data/raw/train.csv --out backend/artifacts --mlruns mlruns --sample
+
+      - name: Quality gate
+        run: python -m ml.evaluate --metrics backend/artifacts/metrics.json --max-mape 35
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: yarn
+          cache-dependency-path: frontend/yarn.lock
+      - name: Install
+        working-directory: frontend
+        run: yarn install --frozen-lockfile
+      - name: Build
+        working-directory: frontend
+        env:
+          CI: "false"
+          REACT_APP_BACKEND_URL: "https://example.com"
+        run: yarn build
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: [backend]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build API image
+        run: docker build -t stocksense-api:ci -f Dockerfile .

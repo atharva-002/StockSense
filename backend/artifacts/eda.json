@@ -1,0 +1,417 @@
+{
+  "n_rows": 182600,
+  "date_range": [
+    "2013-01-01",
+    "2017-12-31"
+  ],
+  "n_stores": 10,
+  "n_items": 10,
+  "total_sales": 8694850,
+  "avg_daily_sales_overall": 4761.692223439211,
+  "monthly_trend": [
+    {
+      "period": "2013-01",
+      "sales": 82699
+    },
+    {
+      "period": "2013-02",
+      "sales": 83899
+    },
+    {
+      "period": "2013-03",
+      "sales": 112865
+    },
+    {
+      "period": "2013-04",
+      "sales": 124260
+    },
+    {
+      "period": "2013-05",
+      "sales": 138724
+    },
+    {
+      "period": "2013-06",
+      "sales": 145470
+    },
+    {
+      "period": "2013-07",
+      "sales": 155620
+    },
+    {
+      "period": "2013-08",
+      "sales": 139436
+    },
+    {
+      "period": "2013-09",
+      "sales": 125313
+    },
+    {
+      "period": "2013-10",
+      "sales": 120069
+    },
+    {
+      "period": "2013-11",
+      "sales": 126709
+    },
+    {
+      "period": "2013-12",
+      "sales": 92319
+    },
+    {
+      "period": "2014-01",
+      "sales": 95980
+    },
+    {
+      "period": "2014-02",
+      "sales": 96246
+    },
+    {
+      "period": "2014-03",
+      "sales": 128330
+    },
+    {
+      "period": "2014-04",
+      "sales": 143981
+    },
+    {
+      "period": "2014-05",
+      "sales": 160649
+    },
+    {
+      "period": "2014-06",
+      "sales": 165207
+    },
+    {
+      "period": "2014-07",
+      "sales": 180325
+    },
+    {
+      "period": "2014-08",
+      "sales": 161413
+    },
+    {
+      "period": "2014-09",
+      "sales": 142781
+    },
+    {
+      "period": "2014-10",
+      "sales": 138131
+    },
+    {
+      "period": "2014-11",
+      "sales": 145648
+    },
+    {
+      "period": "2014-12",
+      "sales": 105592
+    },
+    {
+      "period": "2015-01",
+      "sales": 100656
+    },
+    {
+      "period": "2015-02",
+      "sales": 100214
+    },
+    {
+      "period": "2015-03",
+      "sales": 133645
+    },
+    {
+      "period": "2015-04",
+      "sales": 150724
+    },
+    {
+      "period": "2015-05",
+      "sales": 168865
+    },
+    {
+      "period": "2015-06",
+      "sales": 171245
+    },
+    {
+      "period": "2015-07",
+      "sales": 188546
+    },
+    {
+      "period": "2015-08",
+      "sales": 168056
+    },
+    {
+      "period": "2015-09",
+      "sales": 150596
+    },
+    {
+      "period": "2015-10",
+      "sales": 145252
+    },
+    {
+      "period": "2015-11",
+      "sales": 150617
+    },
+    {
+      "period": "2015-12",
+      "sales": 110468
+    },
+    {
+      "period": "2016-01",
+      "sales": 109621
+    },
+    {
+      "period": "2016-02",
+      "sales": 112090
+    },
+    {
+      "period": "2016-03",
+      "sales": 143878
+    },
+    {
+      "period": "2016-04",
+      "sales": 164376
+    },
+    {
+      "period": "2016-05",
+      "sales": 180215
+    },
+    {
+      "period": "2016-06",
+      "sales": 186474
+    },
+    {
+      "period": "2016-07",
+      "sales": 207830
+    },
+    {
+      "period": "2016-08",
+      "sales": 178771
+    },
+    {
+      "period": "2016-09",
+      "sales": 163207
+    },
+    {
+      "period": "2016-10",
+      "sales": 157964
+    },
+    {
+      "period": "2016-11",
+      "sales": 162524
+    },
+    {
+      "period": "2016-12",
+      "sales": 120887
+    },
+    {
+      "period": "2017-01",
+      "sales": 112634
+    },
+    {
+      "period": "2017-02",
+      "sales": 113408
+    },
+    {
+      "period": "2017-03",
+      "sales": 149689
+    },
+    {
+      "period": "2017-04",
+      "sales": 171733
+    },
+    {
+      "period": "2017-05",
+      "sales": 185944
+    },
+    {
+      "period": "2017-06",
+      "sales": 194298
+    },
+    {
+      "period": "2017-07",
+      "sales": 213167
+    },
+    {
+      "period": "2017-08",
+      "sales": 187007
+    },
+    {
+      "period": "2017-09",
+      "sales": 170313
+    },
+    {
+      "period": "2017-10",
+      "sales": 161997
+    },
+    {
+      "period": "2017-11",
+      "sales": 169332
+    },
+    {
+      "period": "2017-12",
+      "sales": 126941
+    }
+  ],
+  "weekly_seasonality": [
+    {
+      "day": "Mon",
+      "avg_sales": 37.74
+    },
+    {
+      "day": "Tue",
+      "avg_sales": 43.96
+    },
+    {
+      "day": "Wed",
+      "avg_sales": 44.08
+    },
+    {
+      "day": "Thu",
+      "avg_sales": 47.1
+    },
+    {
+      "day": "Fri",
+      "avg_sales": 50.28
+    },
+    {
+      "day": "Sat",
+      "avg_sales": 53.51
+    },
+    {
+      "day": "Sun",
+      "avg_sales": 56.62
+    }
+  ],
+  "yearly_seasonality": [
+    {
+      "month": 1,
+      "avg_sales": 32.36
+    },
+    {
+      "month": 2,
+      "avg_sales": 35.88
+    },
+    {
+      "month": 3,
+      "avg_sales": 43.12
+    },
+    {
+      "month": 4,
+      "avg_sales": 50.34
+    },
+    {
+      "month": 5,
+      "avg_sales": 53.83
+    },
+    {
+      "month": 6,
+      "avg_sales": 57.51
+    },
+    {
+      "month": 7,
+      "avg_sales": 61.0
+    },
+    {
+      "month": 8,
+      "avg_sales": 53.85
+    },
+    {
+      "month": 9,
+      "avg_sales": 50.15
+    },
+    {
+      "month": 10,
+      "avg_sales": 46.67
+    },
+    {
+      "month": 11,
+      "avg_sales": 50.32
+    },
+    {
+      "month": 12,
+      "avg_sales": 35.88
+    }
+  ],
+  "sales_by_store": [
+    {
+      "store": 2,
+      "sales": 1115554
+    },
+    {
+      "store": 8,
+      "sales": 1066848
+    },
+    {
+      "store": 3,
+      "sales": 990909
+    },
+    {
+      "store": 10,
+      "sales": 975980
+    },
+    {
+      "store": 9,
+      "sales": 916284
+    },
+    {
+      "store": 4,
+      "sales": 914134
+    },
+    {
+      "store": 1,
+      "sales": 787140
+    },
+    {
+      "store": 6,
+      "sales": 661421
+    },
+    {
+      "store": 5,
+      "sales": 660902
+    },
+    {
+      "store": 7,
+      "sales": 605678
+    }
+  ],
+  "sales_by_item": [
+    {
+      "item": 8,
+      "sales": 1405108
+    },
+    {
+      "item": 10,
+      "sales": 1337133
+    },
+    {
+      "item": 2,
+      "sales": 1069564
+    },
+    {
+      "item": 7,
+      "sales": 1068777
+    },
+    {
+      "item": 6,
+      "sales": 1068281
+    },
+    {
+      "item": 9,
+      "sales": 938379
+    },
+    {
+      "item": 3,
+      "sales": 669087
+    },
+    {
+      "item": 4,
+      "sales": 401907
+    },
+    {
+      "item": 1,
+      "sales": 401384
+    },
+    {
+      "item": 5,
+      "sales": 335230
+    }
+  ]
+}

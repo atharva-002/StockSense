@@ -1,0 +1,6 @@
+# Training-only dependencies (not needed on the serving API).
+-r requirements.txt
+mlflow==2.17.0
+shap==0.46.0
+pytest==8.3.3
+ruff==0.6.9

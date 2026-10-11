@@ -1,0 +1,646 @@
+{
+  "global": [
+    {
+      "feature": "rmean_14",
+      "importance": 7.6084
+    },
+    {
+      "feature": "rmean_7",
+      "importance": 6.5554
+    },
+    {
+      "feature": "dayofweek",
+      "importance": 3.4346
+    },
+    {
+      "feature": "rmean_28",
+      "importance": 3.3085
+    },
+    {
+      "feature": "lag_364",
+      "importance": 2.0727
+    },
+    {
+      "feature": "month",
+      "importance": 1.6835
+    },
+    {
+      "feature": "item",
+      "importance": 1.3399
+    },
+    {
+      "feature": "lag_14",
+      "importance": 0.9556
+    },
+    {
+      "feature": "weekofyear",
+      "importance": 0.9439
+    },
+    {
+      "feature": "lag_7",
+      "importance": 0.8698
+    },
+    {
+      "feature": "store",
+      "importance": 0.7395
+    },
+    {
+      "feature": "lag_28",
+      "importance": 0.5523
+    },
+    {
+      "feature": "day",
+      "importance": 0.3967
+    },
+    {
+      "feature": "year",
+      "importance": 0.2842
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 0.1756
+    },
+    {
+      "feature": "rstd_28",
+      "importance": 0.1602
+    },
+    {
+      "feature": "rstd_14",
+      "importance": 0.1097
+    },
+    {
+      "feature": "rstd_7",
+      "importance": 0.0987
+    },
+    {
+      "feature": "quarter",
+      "importance": 0.0046
+    },
+    {
+      "feature": "is_holiday",
+      "importance": 0.0008
+    }
+  ],
+  "examples": [
+    {
+      "store": 9,
+      "item": 9,
+      "drivers": [
+        {
+          "feature": "dayofweek",
+          "shap": -6.9661,
+          "value": 0.0
+        },
+        {
+          "feature": "rmean_14",
+          "shap": 5.1012,
+          "value": 57.5
+        },
+        {
+          "feature": "lag_364",
+          "shap": -4.3355,
+          "value": 33.0
+        },
+        {
+          "feature": "rmean_7",
+          "shap": 2.4484,
+          "value": 57.714
+        },
+        {
+          "feature": "lag_7",
+          "shap": -1.86,
+          "value": 36.0
+        },
+        {
+          "feature": "rmean_28",
+          "shap": 1.7056,
+          "value": 57.464
+        },
+        {
+          "feature": "lag_14",
+          "shap": -1.2816,
+          "value": 40.0
+        },
+        {
+          "feature": "item",
+          "shap": 0.4469,
+          "value": 9.0
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -0.4026,
+          "value": 43.0
+        },
+        {
+          "feature": "day",
+          "shap": 0.1801,
+          "value": 23.0
+        }
+      ]
+    },
+    {
+      "store": 2,
+      "item": 3,
+      "drivers": [
+        {
+          "feature": "dayofweek",
+          "shap": 6.5345,
+          "value": 6.0
+        },
+        {
+          "feature": "rmean_14",
+          "shap": 2.8571,
+          "value": 46.214
+        },
+        {
+          "feature": "month",
+          "shap": -2.5184,
+          "value": 12.0
+        },
+        {
+          "feature": "rmean_7",
+          "shap": -1.8292,
+          "value": 44.0
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -1.3869,
+          "value": 51.0
+        },
+        {
+          "feature": "lag_364",
+          "shap": -1.1385,
+          "value": 48.0
+        },
+        {
+          "feature": "store",
+          "shap": 1.048,
+          "value": 2.0
+        },
+        {
+          "feature": "item",
+          "shap": -0.8834,
+          "value": 3.0
+        },
+        {
+          "feature": "lag_7",
+          "shap": -0.857,
+          "value": 53.0
+        },
+        {
+          "feature": "day",
+          "shap": 0.7138,
+          "value": 24.0
+        }
+      ]
+    },
+    {
+      "store": 1,
+      "item": 7,
+      "drivers": [
+        {
+          "feature": "rmean_14",
+          "shap": 5.7809,
+          "value": 60.286
+        },
+        {
+          "feature": "rmean_7",
+          "shap": 3.5742,
+          "value": 59.286
+        },
+        {
+          "feature": "rmean_28",
+          "shap": 2.7679,
+          "value": 61.357
+        },
+        {
+          "feature": "lag_364",
+          "shap": -2.6766,
+          "value": 43.0
+        },
+        {
+          "feature": "dayofweek",
+          "shap": -2.3816,
+          "value": 1.0
+        },
+        {
+          "feature": "month",
+          "shap": 1.0055,
+          "value": 11.0
+        },
+        {
+          "feature": "lag_14",
+          "shap": -0.9656,
+          "value": 59.0
+        },
+        {
+          "feature": "item",
+          "shap": 0.7091,
+          "value": 7.0
+        },
+        {
+          "feature": "store",
+          "shap": -0.6297,
+          "value": 1.0
+        },
+        {
+          "feature": "lag_28",
+          "shap": 0.4908,
+          "value": 68.0
+        }
+      ]
+    },
+    {
+      "store": 5,
+      "item": 6,
+      "drivers": [
+        {
+          "feature": "rmean_14",
+          "shap": 3.8622,
+          "value": 49.0
+        },
+        {
+          "feature": "month",
+          "shap": 2.16,
+          "value": 11.0
+        },
+        {
+          "feature": "dayofweek",
+          "shap": 1.6749,
+          "value": 4.0
+        },
+        {
+          "feature": "lag_14",
+          "shap": -1.3874,
+          "value": 38.0
+        },
+        {
+          "feature": "store",
+          "shap": -1.2631,
+          "value": 5.0
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -1.0798,
+          "value": 44.0
+        },
+        {
+          "feature": "rmean_7",
+          "shap": 0.5688,
+          "value": 50.286
+        },
+        {
+          "feature": "item",
+          "shap": 0.5668,
+          "value": 6.0
+        },
+        {
+          "feature": "lag_7",
+          "shap": -0.538,
+          "value": 63.0
+        },
+        {
+          "feature": "lag_28",
+          "shap": -0.4315,
+          "value": 47.0
+        }
+      ]
+    },
+    {
+      "store": 10,
+      "item": 4,
+      "drivers": [
+        {
+          "feature": "rmean_14",
+          "shap": -7.2477,
+          "value": 26.429
+        },
+        {
+          "feature": "rmean_7",
+          "shap": -6.9473,
+          "value": 26.857
+        },
+        {
+          "feature": "rmean_28",
+          "shap": -2.5669,
+          "value": 27.607
+        },
+        {
+          "feature": "lag_364",
+          "shap": -2.3863,
+          "value": 21.0
+        },
+        {
+          "feature": "dayofweek",
+          "shap": -1.8706,
+          "value": 1.0
+        },
+        {
+          "feature": "item",
+          "shap": -1.683,
+          "value": 4.0
+        },
+        {
+          "feature": "lag_14",
+          "shap": -0.9567,
+          "value": 19.0
+        },
+        {
+          "feature": "lag_7",
+          "shap": -0.811,
+          "value": 28.0
+        },
+        {
+          "feature": "month",
+          "shap": 0.7973,
+          "value": 11.0
+        },
+        {
+          "feature": "lag_28",
+          "shap": -0.6977,
+          "value": 27.0
+        }
+      ]
+    },
+    {
+      "store": 10,
+      "item": 8,
+      "drivers": [
+        {
+          "feature": "rmean_7",
+          "shap": 16.0258,
+          "value": 108.857
+        },
+        {
+          "feature": "rmean_14",
+          "shap": 14.4145,
+          "value": 105.786
+        },
+        {
+          "feature": "rmean_28",
+          "shap": 7.4735,
+          "value": 103.679
+        },
+        {
+          "feature": "item",
+          "shap": 3.2299,
+          "value": 8.0
+        },
+        {
+          "feature": "dayofweek",
+          "shap": -3.0974,
+          "value": 1.0
+        },
+        {
+          "feature": "lag_364",
+          "shap": 2.0705,
+          "value": 76.0
+        },
+        {
+          "feature": "lag_28",
+          "shap": 1.5707,
+          "value": 105.0
+        },
+        {
+          "feature": "month",
+          "shap": -1.5297,
+          "value": 10.0
+        },
+        {
+          "feature": "lag_14",
+          "shap": 1.4187,
+          "value": 94.0
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -1.241,
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "store": 7,
+      "item": 6,
+      "drivers": [
+        {
+          "feature": "rmean_14",
+          "shap": -5.592,
+          "value": 33.429
+        },
+        {
+          "feature": "rmean_7",
+          "shap": -4.8888,
+          "value": 31.429
+        },
+        {
+          "feature": "month",
+          "shap": -1.8876,
+          "value": 12.0
+        },
+        {
+          "feature": "rmean_28",
+          "shap": -1.4022,
+          "value": 35.25
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -1.0941,
+          "value": 52.0
+        },
+        {
+          "feature": "store",
+          "shap": -1.0577,
+          "value": 7.0
+        },
+        {
+          "feature": "item",
+          "shap": 0.7276,
+          "value": 6.0
+        },
+        {
+          "feature": "lag_364",
+          "shap": -0.693,
+          "value": 33.0
+        },
+        {
+          "feature": "day",
+          "shap": 0.6423,
+          "value": 28.0
+        },
+        {
+          "feature": "lag_7",
+          "shap": -0.5446,
+          "value": 36.0
+        }
+      ]
+    },
+    {
+      "store": 10,
+      "item": 3,
+      "drivers": [
+        {
+          "feature": "lag_364",
+          "shap": -3.8385,
+          "value": 34.0
+        },
+        {
+          "feature": "rmean_14",
+          "shap": 3.0399,
+          "value": 47.5
+        },
+        {
+          "feature": "dayofweek",
+          "shap": 2.0721,
+          "value": 4.0
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -1.3854,
+          "value": 40.0
+        },
+        {
+          "feature": "rmean_7",
+          "shap": -1.0351,
+          "value": 45.857
+        },
+        {
+          "feature": "lag_7",
+          "shap": -0.9433,
+          "value": 49.0
+        },
+        {
+          "feature": "item",
+          "shap": -0.9303,
+          "value": 3.0
+        },
+        {
+          "feature": "lag_14",
+          "shap": -0.6369,
+          "value": 50.0
+        },
+        {
+          "feature": "store",
+          "shap": 0.3615,
+          "value": 10.0
+        },
+        {
+          "feature": "day",
+          "shap": -0.3349,
+          "value": 6.0
+        }
+      ]
+    },
+    {
+      "store": 5,
+      "item": 2,
+      "drivers": [
+        {
+          "feature": "rmean_14",
+          "shap": 2.9085,
+          "value": 46.429
+        },
+        {
+          "feature": "lag_364",
+          "shap": -2.1917,
+          "value": 42.0
+        },
+        {
+          "feature": "lag_7",
+          "shap": -1.4668,
+          "value": 43.0
+        },
+        {
+          "feature": "rmean_28",
+          "shap": 1.1926,
+          "value": 50.679
+        },
+        {
+          "feature": "lag_14",
+          "shap": -0.9928,
+          "value": 44.0
+        },
+        {
+          "feature": "item",
+          "shap": 0.9607,
+          "value": 2.0
+        },
+        {
+          "feature": "dayofweek",
+          "shap": 0.7573,
+          "value": 3.0
+        },
+        {
+          "feature": "store",
+          "shap": -0.7272,
+          "value": 5.0
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -0.7155,
+          "value": 42.0
+        },
+        {
+          "feature": "year",
+          "shap": 0.269,
+          "value": 2017.0
+        }
+      ]
+    },
+    {
+      "store": 5,
+      "item": 6,
+      "drivers": [
+        {
+          "feature": "lag_364",
+          "shap": -3.0895,
+          "value": 38.0
+        },
+        {
+          "feature": "rmean_14",
+          "shap": 2.6927,
+          "value": 48.643
+        },
+        {
+          "feature": "dayofweek",
+          "shap": -1.9817,
+          "value": 1.0
+        },
+        {
+          "feature": "lag_7",
+          "shap": -1.4368,
+          "value": 43.0
+        },
+        {
+          "feature": "rmean_28",
+          "shap": 1.0894,
+          "value": 50.25
+        },
+        {
+          "feature": "lag_14",
+          "shap": -0.9826,
+          "value": 44.0
+        },
+        {
+          "feature": "item",
+          "shap": 0.9319,
+          "value": 6.0
+        },
+        {
+          "feature": "store",
+          "shap": -0.9253,
+          "value": 5.0
+        },
+        {
+          "feature": "rmean_7",
+          "shap": -0.5638,
+          "value": 45.571
+        },
+        {
+          "feature": "weekofyear",
+          "shap": -0.5169,
+          "value": 43.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+name: Retrain on drift
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"  # Mondays 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install training deps
+        run: pip install -r backend/requirements-train.txt
+
+      - name: Drift check
+        id: drift
+        run: |
+          python -m ml.drift \
+            --train data/raw/train.csv \
+            --new data/new/new_sales.csv \
+            --out backend/artifacts/drift_report.json
+          STATUS=$(python -c "import json;print(json.load(open('backend/artifacts/drift_report.json'))['overall_status'])")
+          echo "status=$STATUS" >> $GITHUB_OUTPUT
+          echo "Drift status: $STATUS"
+
+      - name: Retrain (if drift)
+        if: steps.drift.outputs.status == 'DRIFT' || github.event_name == 'workflow_dispatch'
+        env:
+          MLFLOW_ALLOW_FILE_STORE: "true"
+        run: |
+          python -m ml.train --data data/raw/train.csv --out backend/artifacts --mlruns mlruns
+
+      - name: Quality gate
+        if: steps.drift.outputs.status == 'DRIFT' || github.event_name == 'workflow_dispatch'
+        run: python -m ml.evaluate --metrics backend/artifacts/metrics.json
+
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: stocksense-artifacts-${{ github.run_number }}
+          path: |
+            backend/artifacts/*.json
+            backend/artifacts/*.pkl
+            backend/artifacts/drift_report.json
+
+      - name: Trigger Render deploy
+        if: (steps.drift.outputs.status == 'DRIFT' || github.event_name == 'workflow_dispatch') && env.RENDER_DEPLOY_HOOK != ''
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+        run: |
+          echo "Triggering Render deploy hook..."
+          curl -fsS -X POST "$RENDER_DEPLOY_HOOK" || echo "Deploy hook call failed, continuing."
+
+      - name: Skip-deploy notice
+        if: env.RENDER_DEPLOY_HOOK == ''
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+        run: echo "RENDER_DEPLOY_HOOK secret not set; skipping deploy trigger."

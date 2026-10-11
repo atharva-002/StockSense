@@ -1,0 +1,22 @@
+# StockSense training image — includes MLflow, SHAP, pytest.
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    MLFLOW_ALLOW_FILE_STORE=true
+
+WORKDIR /work
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libgomp1 build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY backend/requirements.txt backend/requirements-train.txt /work/backend/
+RUN pip install --no-cache-dir -r /work/backend/requirements-train.txt
+
+COPY ml /work/ml
+COPY backend /work/backend
+COPY data /work/data
+
+CMD ["python", "-m", "ml.train", "--data", "data/raw/train.csv", "--out", "backend/artifacts", "--mlruns", "mlruns"]

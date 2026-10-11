@@ -1,0 +1,197 @@
+{
+  "overall_status": "OK",
+  "retrain_recommended": false,
+  "recommendation": "No action needed. Model is healthy.",
+  "n_features_checked": 21,
+  "features": [
+    {
+      "feature": "store",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "item",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "dayofweek",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "day",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "month",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "year",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "weekofyear",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "quarter",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "is_weekend",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "is_holiday",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "lag_7",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "lag_14",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "lag_28",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "lag_364",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "rmean_7",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "rmean_14",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "rmean_28",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "rstd_7",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "rstd_14",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "rstd_28",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    },
+    {
+      "feature": "sales",
+      "psi": 0.0,
+      "psi_status": "OK",
+      "ks_stat": 0.0,
+      "ks_pvalue": 1.0,
+      "ks_status": "OK",
+      "status": "OK"
+    }
+  ]
+}

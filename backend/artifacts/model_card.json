@@ -1,0 +1,43 @@
+{
+  "name": "StockSense LightGBM Quantile Forecaster",
+  "version": "2026.10.09-170310",
+  "task": "Daily demand forecasting (28-day horizon)",
+  "architecture": "LightGBM gradient-boosted trees, 3 quantile models (0.1, 0.5, 0.9)",
+  "training_data": "137200 rows across 10 stores x 10 items",
+  "features": [
+    "store",
+    "item",
+    "dayofweek",
+    "day",
+    "month",
+    "year",
+    "weekofyear",
+    "quarter",
+    "is_weekend",
+    "is_holiday",
+    "lag_7",
+    "lag_14",
+    "lag_28",
+    "lag_364",
+    "rmean_7",
+    "rmean_14",
+    "rmean_28",
+    "rstd_7",
+    "rstd_14",
+    "rstd_28"
+  ],
+  "metrics": {
+    "test_mape": 14.073072465989739,
+    "test_rmse": 7.485704014017296,
+    "test_mae": 5.726924122066358
+  },
+  "intended_use": "Short-horizon retail store-item demand forecasting and inventory planning.",
+  "limitations": [
+    "Assumes stationary promotional patterns.",
+    "Does not model stock-outs or price elasticity.",
+    "Prediction intervals assume quantile losses capture tail behaviour."
+  ],
+  "ethical_considerations": [
+    "Over-forecasting leads to waste; under-forecasting creates stock-outs. Review before fully automating orders."
+  ]
+}

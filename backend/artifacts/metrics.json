@@ -1,0 +1,1055 @@
+{
+  "best_model": "lightgbm",
+  "model_version": "2026.10.09-170310",
+  "test_days": 90,
+  "comparison": [
+    {
+      "model": "seasonal_naive",
+      "mae": 7.91,
+      "rmse": 10.387,
+      "mape": 18.948,
+      "smape": 18.987
+    },
+    {
+      "model": "ridge_baseline",
+      "mae": 6.42,
+      "rmse": 8.406,
+      "mape": 15.757,
+      "smape": 15.316
+    },
+    {
+      "model": "lightgbm",
+      "mae": 5.727,
+      "rmse": 7.486,
+      "mape": 14.073,
+      "smape": 13.443
+    }
+  ],
+  "improvement_over_naive_pct": 25.73,
+  "cv_folds": [
+    {
+      "fold": 1,
+      "train_end": "2017-07-04",
+      "val_start": "2017-07-05",
+      "val_end": "2017-09-02",
+      "n_train": 128200,
+      "n_val": 6000,
+      "naive": {
+        "mae": 8.833,
+        "rmse": 11.488,
+        "mape": 16.099,
+        "smape": 16.309
+      },
+      "linear": {
+        "mae": 6.947,
+        "rmse": 9.063,
+        "mape": 13.135,
+        "smape": 12.615
+      },
+      "lightgbm": {
+        "mae": 6.42,
+        "rmse": 8.395,
+        "mape": 12.047,
+        "smape": 11.645
+      }
+    },
+    {
+      "fold": 2,
+      "train_end": "2017-09-02",
+      "val_start": "2017-09-03",
+      "val_end": "2017-11-01",
+      "n_train": 134200,
+      "n_val": 6000,
+      "naive": {
+        "mae": 7.978,
+        "rmse": 10.341,
+        "mape": 17.528,
+        "smape": 17.5
+      },
+      "linear": {
+        "mae": 6.214,
+        "rmse": 8.031,
+        "mape": 14.092,
+        "smape": 13.687
+      },
+      "lightgbm": {
+        "mae": 5.865,
+        "rmse": 7.631,
+        "mape": 13.345,
+        "smape": 12.679
+      }
+    },
+    {
+      "fold": 3,
+      "train_end": "2017-11-01",
+      "val_start": "2017-11-02",
+      "val_end": "2017-12-31",
+      "n_train": 140200,
+      "n_val": 6000,
+      "naive": {
+        "mae": 7.867,
+        "rmse": 10.409,
+        "mape": 19.352,
+        "smape": 19.474
+      },
+      "linear": {
+        "mae": 6.481,
+        "rmse": 8.541,
+        "mape": 16.349,
+        "smape": 15.842
+      },
+      "lightgbm": {
+        "mae": 5.61,
+        "rmse": 7.321,
+        "mape": 14.211,
+        "smape": 13.544
+      }
+    }
+  ],
+  "error_by_store": [
+    {
+      "mape": 15.2,
+      "rmse": 7.21,
+      "mae": 5.57,
+      "smape": 14.34,
+      "key": 1
+    },
+    {
+      "mape": 12.21,
+      "rmse": 8.76,
+      "mae": 6.66,
+      "smape": 11.83,
+      "key": 2
+    },
+    {
+      "mape": 12.49,
+      "rmse": 7.64,
+      "mae": 6.0,
+      "smape": 12.22,
+      "key": 3
+    },
+    {
+      "mape": 14.01,
+      "rmse": 7.89,
+      "mae": 6.19,
+      "smape": 13.47,
+      "key": 4
+    },
+    {
+      "mape": 15.98,
+      "rmse": 6.53,
+      "mae": 5.07,
+      "smape": 15.11,
+      "key": 5
+    },
+    {
+      "mape": 16.4,
+      "rmse": 6.35,
+      "mae": 4.95,
+      "smape": 15.38,
+      "key": 6
+    },
+    {
+      "mape": 16.74,
+      "rmse": 5.9,
+      "mae": 4.61,
+      "smape": 15.7,
+      "key": 7
+    },
+    {
+      "mape": 11.95,
+      "rmse": 8.64,
+      "mae": 6.52,
+      "smape": 11.69,
+      "key": 8
+    },
+    {
+      "mape": 12.77,
+      "rmse": 7.28,
+      "mae": 5.59,
+      "smape": 12.19,
+      "key": 9
+    },
+    {
+      "mape": 12.99,
+      "rmse": 8.08,
+      "mae": 6.09,
+      "smape": 12.51,
+      "key": 10
+    }
+  ],
+  "error_by_item": [
+    {
+      "mape": 18.79,
+      "rmse": 4.82,
+      "mae": 3.74,
+      "smape": 17.42,
+      "key": 1
+    },
+    {
+      "mape": 11.16,
+      "rmse": 7.96,
+      "mae": 6.34,
+      "smape": 10.93,
+      "key": 2
+    },
+    {
+      "mape": 15.21,
+      "rmse": 6.75,
+      "mae": 5.34,
+      "smape": 14.58,
+      "key": 3
+    },
+    {
+      "mape": 19.45,
+      "rmse": 4.95,
+      "mae": 3.96,
+      "smape": 18.18,
+      "key": 4
+    },
+    {
+      "mape": 20.82,
+      "rmse": 4.53,
+      "mae": 3.5,
+      "smape": 19.09,
+      "key": 5
+    },
+    {
+      "mape": 11.01,
+      "rmse": 8.15,
+      "mae": 6.34,
+      "smape": 10.81,
+      "key": 6
+    },
+    {
+      "mape": 11.18,
+      "rmse": 8.24,
+      "mae": 6.48,
+      "smape": 10.99,
+      "key": 7
+    },
+    {
+      "mape": 10.19,
+      "rmse": 9.79,
+      "mae": 7.79,
+      "smape": 10.05,
+      "key": 8
+    },
+    {
+      "mape": 12.53,
+      "rmse": 7.85,
+      "mae": 6.19,
+      "smape": 12.14,
+      "key": 9
+    },
+    {
+      "mape": 10.38,
+      "rmse": 9.55,
+      "mae": 7.59,
+      "smape": 10.23,
+      "key": 10
+    }
+  ],
+  "error_by_store_item": [
+    {
+      "mape": 23.45,
+      "rmse": 4.74,
+      "mae": 3.97,
+      "smape": 20.81,
+      "store": 1,
+      "item": 1
+    },
+    {
+      "mape": 10.47,
+      "rmse": 7.43,
+      "mae": 5.84,
+      "smape": 10.54,
+      "store": 1,
+      "item": 2
+    },
+    {
+      "mape": 15.18,
+      "rmse": 5.86,
+      "mae": 4.59,
+      "smape": 14.14,
+      "store": 1,
+      "item": 3
+    },
+    {
+      "mape": 19.01,
+      "rmse": 4.38,
+      "mae": 3.52,
+      "smape": 17.89,
+      "store": 1,
+      "item": 4
+    },
+    {
+      "mape": 23.09,
+      "rmse": 4.33,
+      "mae": 3.34,
+      "smape": 20.25,
+      "store": 1,
+      "item": 5
+    },
+    {
+      "mape": 11.31,
+      "rmse": 7.96,
+      "mae": 6.23,
+      "smape": 11.36,
+      "store": 1,
+      "item": 6
+    },
+    {
+      "mape": 13.14,
+      "rmse": 7.96,
+      "mae": 6.9,
+      "smape": 12.97,
+      "store": 1,
+      "item": 7
+    },
+    {
+      "mape": 11.09,
+      "rmse": 9.49,
+      "mae": 7.59,
+      "smape": 10.79,
+      "store": 1,
+      "item": 8
+    },
+    {
+      "mape": 13.78,
+      "rmse": 7.7,
+      "mae": 6.15,
+      "smape": 13.39,
+      "store": 1,
+      "item": 9
+    },
+    {
+      "mape": 11.46,
+      "rmse": 9.69,
+      "mae": 7.62,
+      "smape": 11.21,
+      "store": 1,
+      "item": 10
+    },
+    {
+      "mape": 18.35,
+      "rmse": 6.19,
+      "mae": 4.8,
+      "smape": 16.95,
+      "store": 2,
+      "item": 1
+    },
+    {
+      "mape": 9.76,
+      "rmse": 8.85,
+      "mae": 6.97,
+      "smape": 9.57,
+      "store": 2,
+      "item": 2
+    },
+    {
+      "mape": 12.28,
+      "rmse": 7.49,
+      "mae": 5.84,
+      "smape": 11.86,
+      "store": 2,
+      "item": 3
+    },
+    {
+      "mape": 15.08,
+      "rmse": 5.24,
+      "mae": 4.22,
+      "smape": 14.71,
+      "store": 2,
+      "item": 4
+    },
+    {
+      "mape": 15.6,
+      "rmse": 4.79,
+      "mae": 3.6,
+      "smape": 14.92,
+      "store": 2,
+      "item": 5
+    },
+    {
+      "mape": 11.14,
+      "rmse": 10.39,
+      "mae": 8.26,
+      "smape": 10.89,
+      "store": 2,
+      "item": 6
+    },
+    {
+      "mape": 10.1,
+      "rmse": 9.39,
+      "mae": 7.46,
+      "smape": 9.9,
+      "store": 2,
+      "item": 7
+    },
+    {
+      "mape": 8.3,
+      "rmse": 10.93,
+      "mae": 8.62,
+      "smape": 8.4,
+      "store": 2,
+      "item": 8
+    },
+    {
+      "mape": 10.64,
+      "rmse": 8.53,
+      "mae": 6.86,
+      "smape": 10.41,
+      "store": 2,
+      "item": 9
+    },
+    {
+      "mape": 10.86,
+      "rmse": 12.5,
+      "mae": 10.01,
+      "smape": 10.69,
+      "store": 2,
+      "item": 10
+    },
+    {
+      "mape": 14.27,
+      "rmse": 4.75,
+      "mae": 3.75,
+      "smape": 14.22,
+      "store": 3,
+      "item": 1
+    },
+    {
+      "mape": 9.26,
+      "rmse": 7.77,
+      "mae": 6.25,
+      "smape": 9.21,
+      "store": 3,
+      "item": 2
+    },
+    {
+      "mape": 16.03,
+      "rmse": 8.27,
+      "mae": 6.67,
+      "smape": 15.64,
+      "store": 3,
+      "item": 3
+    },
+    {
+      "mape": 18.93,
+      "rmse": 5.49,
+      "mae": 4.63,
+      "smape": 18.13,
+      "store": 3,
+      "item": 4
+    },
+    {
+      "mape": 18.33,
+      "rmse": 4.66,
+      "mae": 3.77,
+      "smape": 17.38,
+      "store": 3,
+      "item": 5
+    },
+    {
+      "mape": 9.88,
+      "rmse": 8.01,
+      "mae": 6.53,
+      "smape": 9.71,
+      "store": 3,
+      "item": 6
+    },
+    {
+      "mape": 9.08,
+      "rmse": 7.74,
+      "mae": 6.32,
+      "smape": 9.09,
+      "store": 3,
+      "item": 7
+    },
+    {
+      "mape": 8.75,
+      "rmse": 9.74,
+      "mae": 7.82,
+      "smape": 8.79,
+      "store": 3,
+      "item": 8
+    },
+    {
+      "mape": 10.12,
+      "rmse": 7.28,
+      "mae": 5.71,
+      "smape": 9.86,
+      "store": 3,
+      "item": 9
+    },
+    {
+      "mape": 10.25,
+      "rmse": 10.43,
+      "mae": 8.55,
+      "smape": 10.16,
+      "store": 3,
+      "item": 10
+    },
+    {
+      "mape": 19.86,
+      "rmse": 5.28,
+      "mae": 4.18,
+      "smape": 18.21,
+      "store": 4,
+      "item": 1
+    },
+    {
+      "mape": 10.91,
+      "rmse": 7.92,
+      "mae": 6.76,
+      "smape": 10.73,
+      "store": 4,
+      "item": 2
+    },
+    {
+      "mape": 13.3,
+      "rmse": 6.34,
+      "mae": 5.01,
+      "smape": 13.07,
+      "store": 4,
+      "item": 3
+    },
+    {
+      "mape": 19.64,
+      "rmse": 5.34,
+      "mae": 4.5,
+      "smape": 18.86,
+      "store": 4,
+      "item": 4
+    },
+    {
+      "mape": 20.26,
+      "rmse": 4.69,
+      "mae": 3.64,
+      "smape": 18.63,
+      "store": 4,
+      "item": 5
+    },
+    {
+      "mape": 11.32,
+      "rmse": 8.76,
+      "mae": 6.87,
+      "smape": 11.1,
+      "store": 4,
+      "item": 6
+    },
+    {
+      "mape": 11.37,
+      "rmse": 9.05,
+      "mae": 7.11,
+      "smape": 11.1,
+      "store": 4,
+      "item": 7
+    },
+    {
+      "mape": 10.19,
+      "rmse": 10.28,
+      "mae": 8.55,
+      "smape": 10.09,
+      "store": 4,
+      "item": 8
+    },
+    {
+      "mape": 12.86,
+      "rmse": 8.74,
+      "mae": 7.05,
+      "smape": 12.63,
+      "store": 4,
+      "item": 9
+    },
+    {
+      "mape": 10.36,
+      "rmse": 10.06,
+      "mae": 8.25,
+      "smape": 10.3,
+      "store": 4,
+      "item": 10
+    },
+    {
+      "mape": 22.5,
+      "rmse": 4.21,
+      "mae": 3.47,
+      "smape": 20.57,
+      "store": 5,
+      "item": 1
+    },
+    {
+      "mape": 13.85,
+      "rmse": 7.7,
+      "mae": 6.13,
+      "smape": 13.29,
+      "store": 5,
+      "item": 2
+    },
+    {
+      "mape": 15.97,
+      "rmse": 5.6,
+      "mae": 4.59,
+      "smape": 15.49,
+      "store": 5,
+      "item": 3
+    },
+    {
+      "mape": 19.97,
+      "rmse": 3.89,
+      "mae": 3.18,
+      "smape": 18.93,
+      "store": 5,
+      "item": 4
+    },
+    {
+      "mape": 22.12,
+      "rmse": 3.94,
+      "mae": 2.93,
+      "smape": 20.02,
+      "store": 5,
+      "item": 5
+    },
+    {
+      "mape": 12.36,
+      "rmse": 6.67,
+      "mae": 5.37,
+      "smape": 11.92,
+      "store": 5,
+      "item": 6
+    },
+    {
+      "mape": 12.58,
+      "rmse": 6.95,
+      "mae": 5.7,
+      "smape": 12.21,
+      "store": 5,
+      "item": 7
+    },
+    {
+      "mape": 11.8,
+      "rmse": 8.32,
+      "mae": 6.73,
+      "smape": 11.38,
+      "store": 5,
+      "item": 8
+    },
+    {
+      "mape": 17.24,
+      "rmse": 7.76,
+      "mae": 6.23,
+      "smape": 16.09,
+      "store": 5,
+      "item": 9
+    },
+    {
+      "mape": 11.44,
+      "rmse": 8.06,
+      "mae": 6.4,
+      "smape": 11.18,
+      "store": 5,
+      "item": 10
+    },
+    {
+      "mape": 22.38,
+      "rmse": 4.09,
+      "mae": 3.18,
+      "smape": 19.83,
+      "store": 6,
+      "item": 1
+    },
+    {
+      "mape": 13.71,
+      "rmse": 7.17,
+      "mae": 6.04,
+      "smape": 13.18,
+      "store": 6,
+      "item": 2
+    },
+    {
+      "mape": 20.03,
+      "rmse": 6.37,
+      "mae": 5.21,
+      "smape": 18.52,
+      "store": 6,
+      "item": 3
+    },
+    {
+      "mape": 24.79,
+      "rmse": 4.6,
+      "mae": 3.75,
+      "smape": 22.04,
+      "store": 6,
+      "item": 4
+    },
+    {
+      "mape": 24.31,
+      "rmse": 4.14,
+      "mae": 3.27,
+      "smape": 22.56,
+      "store": 6,
+      "item": 5
+    },
+    {
+      "mape": 12.24,
+      "rmse": 7.09,
+      "mae": 5.49,
+      "smape": 11.94,
+      "store": 6,
+      "item": 6
+    },
+    {
+      "mape": 13.32,
+      "rmse": 7.24,
+      "mae": 5.79,
+      "smape": 13.06,
+      "store": 6,
+      "item": 7
+    },
+    {
+      "mape": 10.86,
+      "rmse": 8.57,
+      "mae": 6.56,
+      "smape": 10.74,
+      "store": 6,
+      "item": 8
+    },
+    {
+      "mape": 13.25,
+      "rmse": 6.29,
+      "mae": 5.03,
+      "smape": 12.88,
+      "store": 6,
+      "item": 9
+    },
+    {
+      "mape": 9.06,
+      "rmse": 6.4,
+      "mae": 5.18,
+      "smape": 9.04,
+      "store": 6,
+      "item": 10
+    },
+    {
+      "mape": 22.01,
+      "rmse": 4.08,
+      "mae": 3.16,
+      "smape": 20.49,
+      "store": 7,
+      "item": 1
+    },
+    {
+      "mape": 13.45,
+      "rmse": 6.58,
+      "mae": 5.13,
+      "smape": 12.83,
+      "store": 7,
+      "item": 2
+    },
+    {
+      "mape": 18.98,
+      "rmse": 5.72,
+      "mae": 4.74,
+      "smape": 17.99,
+      "store": 7,
+      "item": 3
+    },
+    {
+      "mape": 24.49,
+      "rmse": 4.17,
+      "mae": 3.37,
+      "smape": 22.19,
+      "store": 7,
+      "item": 4
+    },
+    {
+      "mape": 27.45,
+      "rmse": 4.11,
+      "mae": 3.19,
+      "smape": 24.33,
+      "store": 7,
+      "item": 5
+    },
+    {
+      "mape": 12.27,
+      "rmse": 6.01,
+      "mae": 4.94,
+      "smape": 12.1,
+      "store": 7,
+      "item": 6
+    },
+    {
+      "mape": 11.6,
+      "rmse": 5.7,
+      "mae": 4.64,
+      "smape": 11.26,
+      "store": 7,
+      "item": 7
+    },
+    {
+      "mape": 12.4,
+      "rmse": 8.21,
+      "mae": 6.48,
+      "smape": 12.04,
+      "store": 7,
+      "item": 8
+    },
+    {
+      "mape": 12.93,
+      "rmse": 5.73,
+      "mae": 4.57,
+      "smape": 12.37,
+      "store": 7,
+      "item": 9
+    },
+    {
+      "mape": 11.8,
+      "rmse": 7.26,
+      "mae": 5.92,
+      "smape": 11.41,
+      "store": 7,
+      "item": 10
+    },
+    {
+      "mape": 15.75,
+      "rmse": 5.74,
+      "mae": 4.42,
+      "smape": 15.4,
+      "store": 8,
+      "item": 1
+    },
+    {
+      "mape": 9.89,
+      "rmse": 9.7,
+      "mae": 7.47,
+      "smape": 9.96,
+      "store": 8,
+      "item": 2
+    },
+    {
+      "mape": 13.18,
+      "rmse": 7.59,
+      "mae": 6.01,
+      "smape": 12.91,
+      "store": 8,
+      "item": 3
+    },
+    {
+      "mape": 15.07,
+      "rmse": 4.81,
+      "mae": 3.76,
+      "smape": 14.13,
+      "store": 8,
+      "item": 4
+    },
+    {
+      "mape": 15.84,
+      "rmse": 4.76,
+      "mae": 3.63,
+      "smape": 15.06,
+      "store": 8,
+      "item": 5
+    },
+    {
+      "mape": 9.38,
+      "rmse": 9.22,
+      "mae": 6.99,
+      "smape": 9.25,
+      "store": 8,
+      "item": 6
+    },
+    {
+      "mape": 11.44,
+      "rmse": 11.11,
+      "mae": 8.55,
+      "smape": 11.4,
+      "store": 8,
+      "item": 7
+    },
+    {
+      "mape": 9.36,
+      "rmse": 11.65,
+      "mae": 9.31,
+      "smape": 9.34,
+      "store": 8,
+      "item": 8
+    },
+    {
+      "mape": 11.13,
+      "rmse": 8.88,
+      "mae": 7.28,
+      "smape": 11.01,
+      "store": 8,
+      "item": 9
+    },
+    {
+      "mape": 8.47,
+      "rmse": 9.65,
+      "mae": 7.8,
+      "smape": 8.44,
+      "store": 8,
+      "item": 10
+    },
+    {
+      "mape": 15.12,
+      "rmse": 4.51,
+      "mae": 3.31,
+      "smape": 14.31,
+      "store": 9,
+      "item": 1
+    },
+    {
+      "mape": 9.52,
+      "rmse": 7.51,
+      "mae": 6.01,
+      "smape": 9.42,
+      "store": 9,
+      "item": 2
+    },
+    {
+      "mape": 12.43,
+      "rmse": 6.07,
+      "mae": 4.8,
+      "smape": 12.23,
+      "store": 9,
+      "item": 3
+    },
+    {
+      "mape": 18.92,
+      "rmse": 5.33,
+      "mae": 4.12,
+      "smape": 17.11,
+      "store": 9,
+      "item": 4
+    },
+    {
+      "mape": 20.15,
+      "rmse": 4.29,
+      "mae": 3.45,
+      "smape": 18.16,
+      "store": 9,
+      "item": 5
+    },
+    {
+      "mape": 9.89,
+      "rmse": 7.79,
+      "mae": 5.82,
+      "smape": 9.57,
+      "store": 9,
+      "item": 6
+    },
+    {
+      "mape": 10.85,
+      "rmse": 8.67,
+      "mae": 6.86,
+      "smape": 10.65,
+      "store": 9,
+      "item": 7
+    },
+    {
+      "mape": 9.43,
+      "rmse": 9.13,
+      "mae": 7.68,
+      "smape": 9.41,
+      "store": 9,
+      "item": 8
+    },
+    {
+      "mape": 11.64,
+      "rmse": 7.8,
+      "mae": 6.13,
+      "smape": 11.37,
+      "store": 9,
+      "item": 9
+    },
+    {
+      "mape": 9.7,
+      "rmse": 9.47,
+      "mae": 7.72,
+      "smape": 9.62,
+      "store": 9,
+      "item": 10
+    },
+    {
+      "mape": 14.22,
+      "rmse": 4.11,
+      "mae": 3.18,
+      "smape": 13.41,
+      "store": 10,
+      "item": 1
+    },
+    {
+      "mape": 10.84,
+      "rmse": 8.55,
+      "mae": 6.81,
+      "smape": 10.54,
+      "store": 10,
+      "item": 2
+    },
+    {
+      "mape": 14.74,
+      "rmse": 7.57,
+      "mae": 5.92,
+      "smape": 13.99,
+      "store": 10,
+      "item": 3
+    },
+    {
+      "mape": 18.6,
+      "rmse": 5.89,
+      "mae": 4.58,
+      "smape": 17.83,
+      "store": 10,
+      "item": 4
+    },
+    {
+      "mape": 21.1,
+      "rmse": 5.39,
+      "mae": 4.2,
+      "smape": 19.62,
+      "store": 10,
+      "item": 5
+    },
+    {
+      "mape": 10.34,
+      "rmse": 8.73,
+      "mae": 6.93,
+      "smape": 10.3,
+      "store": 10,
+      "item": 6
+    },
+    {
+      "mape": 8.3,
+      "rmse": 7.27,
+      "mae": 5.51,
+      "smape": 8.25,
+      "store": 10,
+      "item": 7
+    },
+    {
+      "mape": 9.72,
+      "rmse": 10.95,
+      "mae": 8.55,
+      "smape": 9.55,
+      "store": 10,
+      "item": 8
+    },
+    {
+      "mape": 11.7,
+      "rmse": 9.05,
+      "mae": 6.84,
+      "smape": 11.37,
+      "store": 10,
+      "item": 9
+    },
+    {
+      "mape": 10.37,
+      "rmse": 10.55,
+      "mae": 8.41,
+      "smape": 10.27,
+      "store": 10,
+      "item": 10
+    }
+  ]
+}

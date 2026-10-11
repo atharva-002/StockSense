@@ -1,0 +1,20 @@
+{
+  "runs": [
+    {
+      "run_id": "985b6e3cbcaf4bcb85270f07cbb7c37b",
+      "run_name": "stocksense-1791565167",
+      "start_time": 1791565167916,
+      "model_version": "2026.10.09-170310",
+      "params": {
+        "horizon": 28,
+        "test_days": 90
+      },
+      "metrics": {
+        "seasonal_naive_mape": 18.948,
+        "ridge_baseline_mape": 15.757,
+        "lightgbm_mape": 14.073
+      },
+      "best_model": "lightgbm"
+    }
+  ]
+}
